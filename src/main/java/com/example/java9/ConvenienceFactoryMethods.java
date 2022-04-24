@@ -3,7 +3,7 @@ package com.example.java9;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JEP269 {
+public class ConvenienceFactoryMethods {
 
 	public static void main(String[] args) {
 		// ArrayList
@@ -12,10 +12,9 @@ public class JEP269 {
 		list.add(3);
 		System.out.println("ArrayList : " + list.toString());
 
-		// List.of
-
-		// ---
 		List<Integer> unmodifiableList = List.of(1, 2, 3);
+		
+//		unmodifiableList.add(10);
 
 		List<Integer> modifiableList = new ArrayList<>(unmodifiableList);
 
@@ -23,7 +22,6 @@ public class JEP269 {
 
 		System.out.println("unmodifiableList : " + unmodifiableList.toString());
 		System.out.println("modifiableList : " + modifiableList.toString());
-		// ---
 	}
 
 }
