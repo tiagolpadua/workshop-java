@@ -1,3 +1,4 @@
 module hello.modules {
-    exports com.baeldung.modules.hello;
+    exports com.example.modules.hello;
+    exports com.example.modules.goodbye;
 }
