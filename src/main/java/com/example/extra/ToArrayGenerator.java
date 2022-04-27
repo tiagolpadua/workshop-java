@@ -9,9 +9,10 @@ public class ToArrayGenerator {
 		var arr2 =  l.toArray(Integer[]::new);
 		var arr3 =  l.stream()
 				.map(x -> x.toString())
+				.toArray(String[]::new);
+		
 //				.map(Object::toString)
-				.toArray((x) -> new String[x]);
-//				.toArray(String[]::new);
+//				.toArray((x) -> new String[x]);
 		
 		System.out.println(arr1.getClass().getTypeName());
 		System.out.println(arr2.getClass().getTypeName());
