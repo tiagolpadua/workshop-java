@@ -2,13 +2,14 @@ package com.example.java10;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class LocalVariableTypeInference {
 	
-//	public var = "hello"; // error: 'var' is not allowed here
+//	public String x = "hello"; // error: 'var' is not allowed here
 
 	public static void main(String[] args) {
-//		String message = "Tchau Java 9";
+//		Strsing message = "Tchau Java 9";
 		var message = "Tchau Java 9";
 		
 		System.out.println(message);
@@ -25,7 +26,7 @@ public class LocalVariableTypeInference {
 		
 //		var emptyList = null; // error: variable initializer is 'null'
 		
-//		var p = (String s) -> s.length() > 10; // error: lambda expression needs an explicit target-type
+//		var p = (s) -> s.length() > 10; // error: lambda expression needs an explicit target-type
 		
 //		var arr = { 1, 2, 3 }; // error: array initializer needs an explicit target-type
 		
